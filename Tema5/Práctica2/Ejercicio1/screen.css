@@ -1,0 +1,45 @@
+#primero {
+  margin-bottom: 20px;
+}
+
+#primero .destacado {
+  color: #ff8000;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 6px;
+}
+
+#primero p {
+  margin: 0px;
+  padding: 0px;
+}
+
+#segundo .destacado {
+  color: #2e5f64;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+#segundo .destacado + p::first-line {
+  font-style: italic;
+}
+
+#segundo p {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+div #parrafos {
+  text-align: right;
+}
+
+div #parrafos p:first-line {
+  font-style: italic;
+}
+/*# sourceMappingURL=screen.css.map */

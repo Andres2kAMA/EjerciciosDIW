@@ -1,0 +1,50 @@
+body {
+  margin: 40px;
+  font: 80% Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  border: 1px solid;
+  width: 600px;
+  height: 400px;
+  /*background: no-repeat
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/grid.png);*/
+  background-color: #fff;
+  color: #444;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas:
+    "a a b b e e"
+    "a a b b e e"
+    "c c d d e e"
+    "c c d d e e";
+}
+
+.a {
+  grid-area: a;
+  align-self: stretch;
+}
+
+.b {
+  grid-area: b;
+  align-self: end;
+}
+
+.c {
+  grid-area: c;
+  align-self: start;
+}
+
+.d {
+  grid-area: d;
+  align-self: center;
+}
+
+.e {
+  grid-area: e;
+}
+
+.box {
+  border: 1px solid;
+}

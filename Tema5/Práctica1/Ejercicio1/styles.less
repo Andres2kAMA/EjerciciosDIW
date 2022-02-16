@@ -1,0 +1,372 @@
+//Me creo las clases necesarias para poder reutilizar código en todo el programa, ya que es una característica que implementa Less.
+
+//Esta clase es para establecer un border radius con el valor introducido por parámetro.
+.redondear_elementos(@radius:1em) {
+  border-radius: @radius;
+}
+
+//Esta clase es para definir un color de fondo del header.
+.color_header {
+  background-color: plum;
+}
+
+//Esta clase es para definir un color de fondo del nav.
+.color_nav {
+  background-color: palevioletred;
+}
+
+//Esta clase es para declarar que el elemento va a tener un display flex
+.displayFlex {
+  display: flex;
+}
+
+//Esta clase es para alinear el texto.
+.alinear_texto {
+  text-align: center;
+}
+
+//Esta clase es para ocultar un elemento.
+.ocultar_elemento {
+  display: none;
+}
+
+//Esta clase es para dar estilo al ul.
+.estilo_ul {
+  float: left;
+  background-color: palevioletred;
+  padding: 20px;
+  padding-right: 80px;
+}
+
+//Esta clase es para quitar el estilo a las listas.
+.quitar_estilo_lista {
+  list-style: none;
+}
+
+//Esta clase es para dar un margin-right con el valor introducido por parámetro.
+.margin_right(@margin:10px) {
+  margin-right: @margin;
+}
+
+//Esta clase es para dar estilo al footer.
+.footer {
+  background-color: blueviolet;
+  padding: 15px;
+}
+
+//Esta clase es para dar estilo al article
+.article {
+  float: right;
+  background-color: orangered;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  height: max-content;
+}
+
+//Esta clase es para definir un elemento grid con 3 columnas.
+.gridTresColumnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 200px;
+  grid-template-areas:
+    "a b ."
+    "a c .";
+}
+
+//Esta clase es para definir un elemento grid con 1 columna.
+.gridUnaColumna {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+
+@media screen and (min-width: 1366px) {
+  //A todos los elementos les doy un border-radius de 1em
+  * {
+    .redondear_elementos(1em);
+  }
+
+  //Establezco un color al header y centro el texto.
+  header {
+    .color_header;
+    .alinear_texto;
+  }
+
+  //Oculto el select.
+  select {
+    .ocultar_elemento;
+  }
+
+  //Establezco estilo al ul.
+  ul {
+    .estilo_ul;
+  }
+
+  //Elimino el estilo de la lista.
+  li {
+    .quitar_estilo_lista;
+  }
+
+  //Establezco un margin right de 10px.
+  nav {
+    .margin_right(10px);
+  }
+
+  //Establezco un section con un display flex.
+  section {
+    .displayFlex;
+  }
+
+  //Le doy estilo al article.
+  article {
+    .article;
+  }
+
+  //Le doy estilo al footer.
+  footer {
+    .footer;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 936px) {
+  //A todos los elementos les doy un border-radius de 1em
+  * {
+    .redondear_elementos(1em);
+  }
+
+  //Establezco un color al header y centro el texto.
+  header {
+    .color_header;
+    .alinear_texto;
+  }
+
+  //Oculto el select.
+  select {
+    .ocultar_elemento;
+  }
+
+  //Establezco estilo al ul.
+  ul {
+    .estilo_ul;
+  }
+
+  //Elimino el estilo de la lista.
+  li {
+    .quitar_estilo_lista;
+  }
+
+  //Establezco un margin right de 10px.
+  nav {
+    .margin_right(10px);
+  }
+
+  //Establezco un section con un display grid con tres columnas.
+  section {
+    .gridTresColumnas;
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  //Le doy estilo al article.
+  article {
+    .article;
+  }
+
+  //Le doy estilo al footer.
+  footer {
+    .footer;
+  }
+}
+
+@media screen and (max-width: 936px) and (min-width: 768px) {
+  //A todos los elementos les doy un border-radius de 1em
+  * {
+    .redondear_elementos(1em);
+  }
+
+  //Establezco un color al header y centro el texto.
+  header {
+    .color_header;
+    .alinear_texto;
+  }
+
+  //Oculto el select.
+  select {
+    .ocultar_elemento;
+  }
+
+  //Establezco estilo al ul.
+  ul {
+    .estilo_ul;
+  }
+
+  //Elimino el estilo de la lista.
+  li {
+    .quitar_estilo_lista;
+  }
+
+  //Establezco un margin right de 10px.
+  nav {
+    .margin_right(10px);
+  }
+
+  //Establezco un section con un display grid con una columna.
+  section {
+    .gridUnaColumna;
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+  //Le doy estilo al article.
+  article {
+    .article;
+  }
+
+  //Le doy estilo al footer.
+  footer {
+    .footer;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  //A todos los elementos les doy un border-radius de 1em
+  * {
+    .redondear_elementos(1em);
+  }
+
+  //Establezco un color al header.
+  header {
+    .color_header;
+  }
+
+  nav {
+    .color_nav;
+  }
+
+  select {
+    border-radius: 0px;
+  }
+
+  //Oculto el ul.
+  ul {
+    .ocultar_elemento;
+  }
+
+  //Elimino el estilo de la lista.
+  li {
+    .quitar_estilo_lista;
+  }
+
+  //Establezco un section con un display grid con una columna.
+  section {
+    .gridUnaColumna;
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  //Le doy estilo al article.
+  article {
+    .article;
+  }
+
+  //Le doy estilo al footer.
+  footer {
+    .footer;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+  //A todos los elementos les doy un border-radius de 1em
+  * {
+    .redondear_elementos(1em);
+  }
+
+  //Establezco un color al header.
+  header {
+    .color_header;
+  }
+
+  //Oculto el h2 del header.
+  header h2 {
+    .ocultar_elemento;
+  }
+
+  //Establezco con color de fondo al nav.
+  nav {
+    .color_nav;
+  }
+
+  //Al select le doy un border-radius de 0px
+  select {
+    border-radius: 0px;
+  }
+
+  //Oculto el ul.
+  ul {
+    .ocultar_elemento;
+  }
+
+  //Elimino el estilo de la lista.
+  li {
+    .quitar_estilo_lista;
+  }
+
+  //Establezco un section con un display grid con una columna.
+  section {
+    .gridUnaColumna;
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  //Le doy estilo al article.
+  article {
+    .article;
+  }
+
+  //Le doy estilo al footer.
+  footer {
+    .footer;
+  }
+}

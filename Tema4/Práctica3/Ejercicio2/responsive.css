@@ -1,0 +1,295 @@
+@media screen and (min-width: 1366px) {
+  * {
+    border-radius: 1em;
+  }
+  header {
+    background-color: plum;
+    text-align: center;
+  }
+
+  select {
+    display: none;
+  }
+
+  ul {
+    float: left;
+    background-color: palevioletred;
+    padding: 20px;
+    padding-right: 80px;
+  }
+
+  li {
+    list-style: none;
+  }
+  nav {
+    margin-right: 10px;
+  }
+
+  section {
+    display: flex;
+  }
+
+  article {
+    float: right;
+    background-color: orangered;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    height: max-content;
+  }
+
+  footer {
+    background-color: blueviolet;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 936px) {
+  * {
+    border-radius: 1em;
+  }
+  header {
+    background-color: plum;
+    text-align: center;
+  }
+
+  select {
+    display: none;
+  }
+
+  ul {
+    float: left;
+    background-color: palevioletred;
+    padding: 20px;
+    padding-right: 80px;
+  }
+
+  li {
+    list-style: none;
+  }
+  nav {
+    margin-right: 10px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-areas:
+      "a b ."
+      "a c .";
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  article {
+    float: right;
+    background-color: orangered;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    height: max-content;
+  }
+
+  footer {
+    background-color: blueviolet;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 936px) and (min-width: 768px) {
+  * {
+    border-radius: 1em;
+  }
+  header {
+    background-color: plum;
+    text-align: center;
+  }
+
+  select {
+    display: none;
+  }
+
+  ul {
+    float: left;
+    background-color: palevioletred;
+    padding: 20px;
+    padding-right: 80px;
+  }
+
+  li {
+    list-style: none;
+  }
+  nav {
+    margin-right: 10px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  article {
+    float: right;
+    background-color: orangered;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    height: max-content;
+  }
+
+  footer {
+    background-color: blueviolet;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  * {
+    border-radius: 1em;
+  }
+
+  header {
+    background-color: plum;
+  }
+
+  nav {
+    background-color: palevioletred;
+  }
+
+  select {
+    border-radius: 0px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  article {
+    float: right;
+    background-color: orangered;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    height: max-content;
+  }
+
+  footer {
+    background-color: blueviolet;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+  * {
+    border-radius: 1em;
+  }
+
+  header {
+    background-color: plum;
+  }
+
+  header h2 {
+    display: none;
+  }
+  nav {
+    background-color: palevioletred;
+  }
+
+  select {
+    border-radius: 0px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  article {
+    float: right;
+    background-color: orangered;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    height: max-content;
+  }
+
+  footer {
+    background-color: blueviolet;
+    padding: 15px;
+  }
+}

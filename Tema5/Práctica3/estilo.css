@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+}
+.header {
+  background-color: greenyellow;
+  border: 2px solid black;
+  padding: 10px;
+}
+.aside {
+  background-color: red;
+  border: 2px solid black;
+  width: 33.33%;
+}
+
+.titulo {
+  background-color: orchid;
+  border: 2px solid black;
+}
+
+.main {
+  margin: 0px;
+  background-color: orange;
+  border: 2px solid black;
+  padding: 40px;
+}
+
+.contenedor {
+  padding: 20px;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+.footer {
+  background-color: greenyellow;
+  border: 2px solid black;
+}

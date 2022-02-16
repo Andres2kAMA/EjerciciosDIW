@@ -1,0 +1,45 @@
+$color_primer_destacado: #ff8000;
+$color_segundo_destacado: #2e5f64;
+
+#primero {
+  .destacado {
+    color: $color_primer_destacado;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 6px;
+  }
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+  margin-bottom: 20px;
+}
+
+#segundo {
+  .destacado {
+    + p::first-line {
+      font-style: italic;
+    }
+
+    color: $color_segundo_destacado;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    padding-left: 5px;
+  }
+
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+div {
+  padding: 10px;
+  margin-left: 15px;
+  #parrafos {
+    p:first-line {
+      font-style: italic;
+    }
+    text-align: right;
+  }
+}
